@@ -53,7 +53,7 @@
       padding: 1rem 0;
     }
 
-    /* UPDATED CSS FOR LOGO (Larger, Gradient Icon) */
+    /* UPDATED CSS FOR LOGO (AxiomBio Nexus) */
     .logo {
       font-size: 1.85rem; 
       font-weight: 800; 
@@ -354,18 +354,51 @@
       box-shadow: var(--shadow-lg);
     }
 
-    /* Project Media Style (Kept as a simple background block) */
+    /* UPDATED: Project Media Style to display text content inside the colored block */
     .project-media {
       width: 100%;
-      height: 200px; /* Adjust height as needed */
-      object-fit: cover;
-      /* Use a color gradient for visual appeal when no image is present */
+      height: 200px;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
+      
+      /* New styles for containing text */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem 1rem; /* Increased padding */
+      color: white; 
     }
+
+    .project-media h3 {
+        color: white; /* Ensure title is white */
+        margin-bottom: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    .project-media .project-tags {
+        justify-content: center; /* Center the tags list */
+        margin-bottom: 0; /* Remove bottom margin here */
+    }
+    
+    .project-media .tag {
+      background: rgba(255, 255, 255, 0.25); /* Semi-transparent white tag background */
+      color: white; /* White tag text */
+      border: none;
+    }
+    /* END UPDATED CSS */
     
 
     .project-content {
       padding: 1.5rem;
+    }
+
+    .project-content h3 { /* Ensure the title is removed from here if content is moved */
+        display: none;
+    }
+
+    .project-content .project-tags { /* Ensure tags are removed from here if content is moved */
+        display: none;
     }
 
     .project-tags {
@@ -922,14 +955,15 @@
 
       <div class="projects-grid">
         <div class="project-card" data-category="data-analysis environmental">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
             <div class="project-tags">
               <span class="tag">Excel</span>
               <span class="tag">Data Visualization</span>
               <span class="tag">Environmental</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
             <div class="project-links">
               <a href="#"><i class="fas fa-external-link-alt"></i> View Demo</a>
@@ -938,13 +972,14 @@
         </div>
 
         <div class="project-card" data-category="data-analysis">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
             <div class="project-tags">
               <span class="tag">Power BI</span>
               <span class="tag">Time Series</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
             <div class="project-links">
               <a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
@@ -953,14 +988,15 @@
         </div>
 
         <div class="project-card" data-category="bioinformatics ml">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>AI-Driven Herbicide Design & Molecular Docking</h3>
             <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">Molecular Docking</span>
               <span class="tag">AI</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Innovative project designing AI-based herbicide molecules with enhanced binding and toxicity profiles using SwissDock, SwissADME, and Python analysis.</p>
             <div class="project-links">
               <a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -969,14 +1005,15 @@
         </div>
         
         <div class="project-card" data-category="data-analysis biotechnology">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>Organic Aquaculture Feed & Production Optimization</h3>
             <div class="project-tags">
               <span class="tag">Biotechnology</span>
               <span class="tag">Optimization</span>
               <span class="tag">R/Python</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Consultancy project focused on optimizing the nutrient composition of organic feed and predicting production yield using statistical modeling and data analysis.</p>
             <div class="project-links">
               <a href="https://github.com/YourRepo/OrganicAquaculture" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -985,14 +1022,15 @@
         </div>
 
         <div class="project-card" data-category="hardware environmental">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>Solar-Powered Fertilizer Spraying Device</h3>
             <div class="project-tags">
               <span class="tag">IoT</span>
               <span class="tag">Hardware</span>
               <span class="tag">Environmental</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Design and prototyping of an automated, solar-powered device for optimized, precise fertilizer application, reducing waste and environmental impact.</p>
             <div class="project-links">
               <a href="https://github.com/YourRepo/SolarFertilizerDevice" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -1001,14 +1039,15 @@
         </div>
 
         <div class="project-card" data-category="ml">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>SmartDeskAI-wallpaper-Scheduler</h3>
             <div class="project-tags">
               <span class="tag">AI</span>
               <span class="tag">Scheduler</span>
               <span class="tag">Python</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>An intelligent scheduling system using AI to manage and dynamically update desktop wallpapers based on time, context, or user preference patterns.</p>
             <div class="project-links">
               <a href="https://github.com/YourRepo/SmartDeskAI" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -1017,14 +1056,15 @@
         </div>
 
         <div class="project-card" data-category="ml">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>NoteGen</h3>
             <div class="project-tags">
               <span class="tag">Natural Language Processing</span>
               <span class="tag">AI</span>
               <span class="tag">Python</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>A smart application designed to generate concise, structured notes automatically from long-form text or transcripts using advanced NLP techniques.</p>
             <div class="project-links">
               <a href="https://github.com/YourRepo/NoteGen" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -1033,14 +1073,15 @@
         </div>
 
         <div class="project-card" data-category="ml environmental data-analysis">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>ML-Model For Water Quality Prediction</h3>
             <div class="project-tags">
               <span class="tag">Machine Learning</span>
               <span class="tag">Environmental</span>
               <span class="tag">Predictive Modeling</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Developed a robust machine learning model (e.g., Random Forest or XGBoost) to predict future water quality indices based on historical sensor data and environmental factors.</p>
             <div class="project-links">
               <a href="https://github.com/YourRepo/ML-WaterQuality" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -1049,13 +1090,14 @@
         </div>
         
         <div class="project-card" data-category="ml environmental">
-          <div class="project-media"></div>
-          <div class="project-content">
+          <div class="project-media">
             <h3>ML for Bio-remediation Efficacy</h3>
             <div class="project-tags">
               <span class="tag">Machine Learning</span>
               <span class="tag">Environmental</span>
             </div>
+          </div>
+          <div class="project-content">
             <p>Development of predictive models to forecast the efficacy and optimal conditions for microbial bio-remediation of pollutants in contaminated sites.</p>
             <div class="project-links">
               <a href="https://github.com/Thokhir/ML-Bioremediation" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -1142,14 +1184,15 @@
             <div>
               <strong>Email:</strong><br>
               <a href="mailto:your.mail@example.com" style="color: white; text-decoration: underline;">your.mail@example.com</a> 
-              </div>
+            </div>
           </div>
+          
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
             <div>
               <strong>Phone:</strong><br>
               <a href="tel:+919876543210" style="color: white; text-decoration: underline;">+91-9876543210</a> (India)
-              </div>
+            </div>
           </div>
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
