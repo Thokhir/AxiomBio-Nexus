@@ -9,7 +9,6 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-
     :root {
       --primary: #2563eb;
       --primary-dark: #1e40af;
@@ -54,11 +53,11 @@
       padding: 1rem 0;
     }
 
-    /* UPDATED LOGO STYLE (Simple text from user's uploaded file) */
+    /* UPDATED CSS FOR LOGO (AxiomBio Nexus) */
     .logo {
       font-size: 1.85rem; 
       font-weight: 800; 
-      color: var(--primary); /* Keep blue primary color */
+      color: var(--text);
       display: flex;
       align-items: center;
       gap: 0.75rem; 
@@ -72,8 +71,6 @@
       -webkit-text-fill-color: transparent;
       display: block; 
     }
-    /* END LOGO STYLE */
-
 
     nav {
       display: flex;
@@ -228,7 +225,7 @@
       margin: 0 auto;
     }
     
-    /* MISSION STYLE (Re-added from last comprehensive update) */
+    /* MISSION STYLE */
     .mission-section {
         background: var(--primary);
         color: white;
@@ -398,7 +395,6 @@
 
     .project-content h3 { display: none; }
     .project-content .project-tags { display: none; }
-
 
     .project-tags {
       display: flex;
@@ -707,7 +703,10 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <div class="logo">Dr. Thokhir Basha Shaik</div>
+        <div class="logo">
+          <i class="fas fa-microchip logo-icon"></i> 
+          AxiomBio Nexus
+        </div>
         <button class="menu-toggle" id="menuToggle">
           <i class="fas fa-bars"></i>
         </button>
@@ -726,7 +725,7 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Transform Your Research with Expert Consultation</h1>
-      <p class="hero-subtitle">Dr. Thokhir Basha Shaik: 11+ years of experience in Biotechnology, Bioinformatics & Data Analytics | PhD in Biotechnology | 34 Publications | 1 Patent</p>
+      <p class="hero-subtitle">AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, and Biotechnology to accelerate research and development in life sciences and environmental sectors.</p>
       <div class="cta-buttons">
         <a href="#services" class="btn btn-primary">
           <i class="fas fa-hand-sparkles"></i> Explore Services
@@ -791,7 +790,7 @@
             <li>Scientific Reports</li>
             <li>Manuscript Editing & Proofreading</li>
           </ul>
-          <div class="price-tag">Contact for Pricing</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -808,7 +807,7 @@
             <li>Data Cleaning & Preprocessing</li>
             <li>Custom Report Generation</li>
           </ul>
-          <div class="price-tag">From ₹5,000</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -825,7 +824,7 @@
             <li>Protein Structure Analysis</li>
             <li>Multi-omics Data Analysis</li>
           </ul>
-          <div class="price-tag">From ₹8,000</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -842,7 +841,7 @@
             <li>Technical Guidance</li>
             <li>Literature Survey</li>
           </ul>
-          <div class="price-tag">From ₹10,000</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -859,7 +858,7 @@
             <li>Power BI for Research</li>
             <li>Custom Workshop Design</li>
           </ul>
-          <div class="price-tag">Group Rates Available</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -876,7 +875,7 @@
             <li>Compliance Consulting</li>
             <li>Method Validation</li>
           </ul>
-          <div class="price-tag">Custom Quotes</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -893,7 +892,7 @@
             <li>Toxicity Assessment</li>
             <li>Structure-Activity Analysis</li>
           </ul>
-          <div class="price-tag">From ₹15,000</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -910,7 +909,7 @@
             <li>Regulatory Compliance</li>
             <li>Impact Assessment Reports</li>
           </ul>
-          <div class="price-tag">From ₹7,000</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -927,7 +926,7 @@
             <li>Model Optimization</li>
             <li>AI-Driven Design (Molecules/Proteins)</li>
           </ul>
-          <div class="price-tag">From ₹12,000</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
       </div>
     </div>
@@ -950,7 +949,7 @@
       </div>
 
       <div class="projects-grid">
-       <div class="project-card" data-category="ml environmental data-analysis">
+        <div class="project-card" data-category="ml environmental data-analysis">
           <div class="project-media">
             <h3>ML-Model For Water Quality Prediction</h3>
             <div class="project-tags">
@@ -1247,7 +1246,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Dr. Thokhir Basha Shaik</h3>
+          <h3>AxiomBio Nexus</h3>
           <p>Expert consulting at the nexus of Biotechnology and Data Science.</p>
           <div class="social-links">
             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -1284,7 +1283,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2024 Dr. Thokhir Basha Shaik. All Rights Reserved.
+        &copy; 2024 AxiomBio Nexus. All Rights Reserved.
       </div>
     </div>
   </footer>
