@@ -1,286 +1,1161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Thokhir Basha Shaik - Biotechnology & Data Science Consultant</title>
-    <meta name="description" content="Professional biotechnology, bioinformatics, and data analytics consulting services. Expert in research writing, project development, and AI/ML applications.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --secondary: #10b981;
-            --accent: #f59e0b;
-            --text: #1e293b;
-            --text-light: #64748b;
-            --bg: #ffffff;
-            --bg-alt: #f8fafc;
-            --card: #ffffff;
-            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.1);
-        }
-        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AxiomBio Nexus - Biotechnology & Data Science Consultant</title>
+  <meta name="description" content="Professional biotechnology, bioinformatics, and data analytics consulting services. Expert in research writing, project development, and AI/ML applications.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        /* Header */
-        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
-        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
-        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
-        nav { display: flex; gap: 2rem; align-items: center; }
-        nav a { color: var(--text); text-decoration: none; font-weight: 500; transition: color 0.3s; }
-        nav a:hover { color: var(--primary); }
-        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text); }
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --secondary: #10b981;
+      --accent: #f59e0b;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --card: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.1);
+    }
 
-        /* Hero Section */
-        .hero { min-height: 85vh; display: flex; align-items: center; position: relative; background: linear-gradient(135deg, rgba(37,99,235,0.9), rgba(16,185,129,0.85)), url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed; color: white; text-align: center; }
-        .hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
-        .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; font-weight: 800; }
-        .hero-subtitle { font-size: clamp(1.1rem, 2.5vw, 1.4rem); margin-bottom: 2rem; opacity: 0.95; }
-        .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; border: none; cursor: pointer; }
-        .btn-primary { background: white; color: var(--primary); }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
-        .btn-secondary:hover { background: white; color: var(--primary); }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
 
-        /* Stats Bar */
-        .stats-bar { background: var(--primary-dark); color: white; padding: 2rem 0; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
-        .stat-item h3 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
 
-        /* Sections */
-        section { padding: 5rem 0; }
-        .section-alt { background: var(--bg-alt); }
-        .section-header { text-align: center; margin-bottom: 3rem; }
-        .section-header h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 1rem; color: var(--primary); }
+    /* Header */
+    header {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
 
-        /* Services Grid */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .service-card { background: var(--card); padding: 2rem; border-radius: 16px; box-shadow: var(--shadow); transition: all 0.3s; border-top: 4px solid var(--primary); }
-        .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-        .service-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; color: white; margin-bottom: 1.5rem; }
-        .price-tag { display: inline-block; background: linear-gradient(135deg, var(--accent), #ef4444); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; margin-top: 1rem; }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
 
-        /* Projects */
-        .projects-filter { text-align: center; margin-bottom: 2rem; }
-        .filter-btn { background: none; border: 2px solid var(--primary); color: var(--primary); padding: 0.5rem 1.5rem; margin: 0.25rem; border-radius: 25px; cursor: pointer; transition: all 0.3s; }
-        .filter-btn:hover, .filter-btn.active { background: var(--primary); color: white; }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-        .project-card { background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); transition: all 0.3s; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
-        .project-image { width: 100%; height: 200px; background: linear-gradient(135deg, var(--primary), var(--secondary)); }
-        .project-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
-        .tag { background: var(--bg-alt); color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.875rem; font-weight: 500; }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
 
-        /* Scroll to Top */
-        .scroll-top { position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; background: var(--primary); color: white; border: none; border-radius: 50%; cursor: pointer; display: none; align-items: center; justify-content: center; box-shadow: var(--shadow-lg); transition: all 0.3s; z-index: 50; }
-        .scroll-top:hover { background: var(--primary-dark); transform: translateY(-5px); }
-        .scroll-top.show { display: flex; }
+    nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav { position: fixed; top: 70px; left: 0; right: 0; background: white; flex-direction: column; padding: 2rem; box-shadow: var(--shadow-lg); transform: translateX(-100%); transition: transform 0.3s; }
-            nav.active { transform: translateX(0); }
-            .menu-toggle { display: block; }
-            .hero { background-attachment: scroll; }
-        }
-    </style>
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background: linear-gradient(135deg, rgba(37,99,235,0.9), rgba(16,185,129,0.85)),
+                  url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.75rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: var(--primary);
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      background: var(--primary-dark);
+      color: white;
+      padding: 2rem 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-item p {
+      opacity: 0.9;
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-alt {
+      background: var(--bg-alt);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .section-header p {
+      font-size: 1.125rem;
+      color: var(--text-light);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      border-top: 4px solid var(--primary);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .service-card ul {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    .service-card li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .service-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--secondary);
+      font-weight: bold;
+    }
+
+    .price-tag {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), #ef4444);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    /* Projects */
+    .projects-filter {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+      background: none;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 0.5rem 1.5rem;
+      margin: 0.25rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .tag {
+      background: var(--bg-alt);
+      color: var(--primary);
+      padding: 0.25rem 0.75rem;
+      border-radius: 15px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .project-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    /* Expertise */
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .expertise-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .expertise-item h4 {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      font-size: 1.125rem;
+    }
+
+    .skill-bar {
+      background: var(--bg-alt);
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 4px;
+      transition: width 1s ease;
+    }
+
+    /* Testimonials */
+    .testimonials-slider {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .testimonial-text {
+      font-size: 1.125rem;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .contact-item i {
+      font-size: 1.5rem;
+      width: 40px;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.875rem;
+      border: 2px solid var(--bg-alt);
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text);
+      color: white;
+      padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: white;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      opacity: 0.7;
+    }
+
+    /* Scroll to Top */
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+      transition: all 0.3s;
+      z-index: 50;
+    }
+
+    .scroll-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-5px);
+    }
+
+    .scroll-top.show {
+      display: flex;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: var(--shadow-lg);
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+      }
+
+      nav.active {
+        transform: translateX(0);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        background-attachment: scroll;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease forwards;
+    }
+  </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">Dr. Thokhir Basha Shaik</div>
-                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
-                <nav id="mainNav">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#expertise">Expertise</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Transform Your Research with Expert Consultation</h1>
-            <p class="hero-subtitle">11+ years of experience in Biotechnology, Bioinformatics & Data Analytics | PhD in Biotechnology | 34 Publications | 1 Patent</p>
-            <div class="cta-buttons">
-                <a href="#services" class="btn btn-primary"><i class="fas fa-hand-sparkles"></i> Explore Services</a>
-                <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Get Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <div class="stats-bar">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item"><h3>11+</h3><p>Years Experience</p></div>
-                <div class="stat-item"><h3>34</h3><p>Publications</p></div>
-                <div class="stat-item"><h3>100+</h3><p>Projects Completed</p></div>
-                <div class="stat-item"><h3>1</h3><p>Patent</p></div>
-            </div>
-        </div>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">AxiomBio Nexus</div>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
-
-    <!-- Services -->
-    <section id="services" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Services</h2>
-                <p>Comprehensive solutions for academic, research, and industrial needs</p>
-            </div>
-            <div class="services-grid">
-                <!-- All 9 service cards exactly as in your original -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-                    <h3>Research & Academic Writing</h3>
-                    <p>High-quality scientific writing services for publications and academic purposes</p>
-                    <ul><li>Thesis Writing (MS & PhD)</li><li>Research Paper Writing</li><li>Literature Review</li><li>Grant Proposal Writing</li><li>Scientific Reports</li><li>Manuscript Editing & Proofreading</li></ul>
-                    <div class="price-tag">Contact for Pricing</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Data Analysis & Visualization</h3>
-                    <p>Transform your data into actionable insights with advanced analytics</p>
-                    <ul><li>Statistical Analysis (ANOVA, PCA, Regression)</li><li>Power BI Dashboard Development</li><li>Python & R Data Analysis</li><li>Machine Learning Models</li><li>Data Cleaning & Preprocessing</li><li>Custom Report Generation</li></ul>
-                    <div class="price-tag">From ₹5,000</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-dna"></i></div>
-                    <h3>Bioinformatics & Computational Biology</h3>
-                    <p>Advanced computational solutions for biological research</p>
-                    <ul><li>Molecular Docking Studies</li><li>ADMET Analysis</li><li>QSAR Modeling</li><li>Sequence Analysis (BLAST, FASTA)</li><li>Protein Structure Analysis</li><li>Multi-omics Data Analysis</li></ul>
-                    <div class="price-tag">From ₹8,000</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
-                    <h3>Research Project Consultation</h3>
-                    <p>End-to-end support for research projects</p>
-                    <ul><li>Project Design & Planning</li><li>Methodology Development</li><li>Experimental Design</li><li>Result Interpretation</li><li>Technical Guidance</li><li>Literature Survey</li></ul>
-                    <div class="price-tag">From ₹10,000</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3>Training & Workshops</h3>
-                    <p>Skill development programs for students and professionals</p>
-                    <ul><li>Bioinformatics Training</li><li>Data Science for Biologists</li><li>Python/R Programming</li><li>Statistical Analysis</li><li>Power BI for Research</li><li>Custom Workshop Design</li></ul>
-                    <div class="price-tag">Group Rates Available</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-flask"></i></div>
-                    <h3>Laboratory Setup & SOP Development</h3>
-                    <p>Establish research facilities with proper protocols</p>
-                    <ul><li>Lab Equipment Procurement</li><li>SOP Development</li><li>Quality Control Protocols</li><li>Staff Training</li><li>Compliance Consulting</li><li>Method Validation</li></ul>
-                    <div class="price-tag">Custom Quotes</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-pills"></i></div>
-                    <h3>Drug Discovery Support</h3>
-                    <p>Computational and analytical support for drug development</p>
-                    <ul><li>Target Identification</li><li>Virtual Screening</li><li>Lead Optimization</li><li>ADMET Prediction</li><li>Toxicity Assessment</li><li>Structure-Activity Analysis</li></ul>
-                    <div class="price-tag">From ₹15,000</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Environmental Analysis</h3>
-                    <p>Water quality and environmental health assessment</p>
-                    <ul><li>Water Quality Assessment</li><li>Environmental Risk Modeling</li><li>Pollution Monitoring</li><li>Sustainability Analysis</li><li>Regulatory Compliance</li><li>Impact Assessment Reports</li></ul>
-                    <div class="price-tag">From ₹7,000</div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-robot"></i></div>
-                    <h3>AI/ML for Life Sciences</h3>
-                    <p>Artificial intelligence solutions for biological problems</p>
-                    <ul><li>Predictive Model Development</li><li>Classification & Regression</li><li>Neural Network Applications</li><li>Feature Engineering</li><li>Model Optimization</li><li>AI-Driven Design (Molecules/Proteins)</li></ul>
-                    <div class="price-tag">From ₹12,000</div>
-                </div>
-            </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Transform Your Research with Expert Consultation</h1>
+      <p class="hero-subtitle">11+ years of experience in Biotechnology, Bioinformatics & Data Analytics | PhD in Biotechnology | 34 Publications | 1 Patent</p>
+      <div class="cta-buttons">
+        <a href="#services" class="btn btn-primary">
+          <i class="fas fa-hand-sparkles"></i> Explore Services
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i> Get Quote
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>11+</h3>
+          <p>Years Experience</p>
         </div>
-    </section>
-
-    <!-- Projects (with working filter) -->
-    <section id="projects" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>Portfolio & Projects</h2>
-                <p>Explore our diverse range of completed projects and research work</p>
-            </div>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
-                <button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
-                <button class="filter-btn" data-filter="ml">Machine Learning</button>
-                <button class="filter-btn" data-filter="environmental">Environmental</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="data-analysis environmental">
-                    <div class="project-image"></div>
-                    <div class="project-content">
-                        <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
-                        <div class="project-tags"><span class="tag">Excel</span><span class="tag">Data Visualization</span><span class="tag">Environmental</span></div>
-                        <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
-                        <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> View Demo</a></div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="data-analysis">
-                    <div class="project-image"></div>
-                    <div class="project-content">
-                        <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
-                        <div class="project-tags"><span class="tag">Power BI</span><span class="tag">Time Series</span></div>
-                        <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
-                        <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a></div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="bioinformatics ml">
-                    <div class="project-image"></div>
-                    <div class="project-content">
-                        <h3>AI-Driven Herbicide Design & Molecular Docking</h3>
-                        <div class="project-tags"><span class="tag">Python</span><span class="tag">Molecular Docking</span><span class="tag">AI</span></div>
-                        <p>Innovative project designing AI-based herbicide molecules with enhanced binding and toxicity profiles using SwissDock, SwissADME, and Python analysis.</p>
-                        <div class="project-links"><a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-item">
+          <h3>34</h3>
+          <p>Publications</p>
         </div>
-    </section>
+        <div class="stat-item">
+          <h3>100+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <h3>1</h3>
+          <p>Patent</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Services</h2>
+        <p>Comprehensive solutions for academic, research, and industrial needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-pen-fancy"></i>
+          </div>
+          <h3>Research & Academic Writing</h3>
+          <p>High-quality scientific writing services for publications and academic purposes</p>
+          <ul>
+            <li>Thesis Writing (MS & PhD)</li>
+            <li>Research Paper Writing</li>
+            <li>Literature Review</li>
+            <li>Grant Proposal Writing</li>
+            <li>Scientific Reports</li>
+            <li>Manuscript Editing & Proofreading</li>
+          </ul>
+          <div class="price-tag">Contact for Pricing</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Data Analysis & Visualization</h3>
+          <p>Transform your data into actionable insights with advanced analytics</p>
+          <ul>
+            <li>Statistical Analysis (ANOVA, PCA, Regression)</li>
+            <li>Power BI Dashboard Development</li>
+            <li>Python & R Data Analysis</li>
+            <li>Machine Learning Models</li>
+            <li>Data Cleaning & Preprocessing</li>
+            <li>Custom Report Generation</li>
+          </ul>
+          <div class="price-tag">From ₹5,000</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-dna"></i>
+          </div>
+          <h3>Bioinformatics & Computational Biology</h3>
+          <p>Advanced computational solutions for biological research</p>
+          <ul>
+            <li>Molecular Docking Studies</li>
+            <li>ADMET Analysis</li>
+            <li>QSAR Modeling</li>
+            <li>Sequence Analysis (BLAST, FASTA)</li>
+            <li>Protein Structure Analysis</li>
+            <li>Multi-omics Data Analysis</li>
+          </ul>
+          <div class="price-tag">From ₹8,000</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Research Project Consultation</h3>
+          <p>End-to-end support for research projects</p>
+          <ul>
+            <li>Project Design & Planning</li>
+            <li>Methodology Development</li>
+            <li>Experimental Design</li>
+            <li>Result Interpretation</li>
+            <li>Technical Guidance</li>
+            <li>Literature Survey</li>
+          </ul>
+          <div class="price-tag">From ₹10,000</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3>Training & Workshops</h3>
+          <p>Skill development programs for students and professionals</p>
+          <ul>
+            <li>Bioinformatics Training</li>
+            <li>Data Science for Biologists</li>
+            <li>Python/R Programming</li>
+            <li>Statistical Analysis</li>
+            <li>Power BI for Research</li>
+            <li>Custom Workshop Design</li>
+          </ul>
+          <div class="price-tag">Group Rates Available</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>Laboratory Setup & SOP Development</h3>
+          <p>Establish research facilities with proper protocols</p>
+          <ul>
+            <li>Lab Equipment Procurement</li>
+            <li>SOP Development</li>
+            <li>Quality Control Protocols</li>
+            <li>Staff Training</li>
+            <li>Compliance Consulting</li>
+            <li>Method Validation</li>
+          </ul>
+          <div class="price-tag">Custom Quotes</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <h3>Drug Discovery Support</h3>
+          <p>Computational and analytical support for drug development</p>
+          <ul>
+            <li>Target Identification</li>
+            <li>Virtual Screening</li>
+            <li>Lead Optimization</li>
+            <li>ADMET Prediction</li>
+            <li>Toxicity Assessment</li>
+            <li>Structure-Activity Analysis</li>
+          </ul>
+          <div class="price-tag">From ₹15,000</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Environmental Analysis</h3>
+          <p>Water quality and environmental health assessment</p>
+          <ul>
+            <li>Water Quality Assessment</li>
+            <li>Environmental Risk Modeling</li>
+            <li>Pollution Monitoring</li>
+            <li>Sustainability Analysis</li>
+            <li>Regulatory Compliance</li>
+            <li>Impact Assessment Reports</li>
+          </ul>
+          <div class="price-tag">From ₹7,000</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>AI/ML for Life Sciences</h3>
+          <p>Artificial intelligence solutions for biological problems</p>
+          <ul>
+            <li>Predictive Model Development</li>
+            <li>Classification & Regression</li>
+            <li>Neural Network Applications</li>
+            <li>Feature Engineering</li>
+            <li>Model Optimization</li>
+            <li>AI-Driven Design (Molecules/Proteins)</li>
+          </ul>
+          <div class="price-tag">From ₹12,000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Portfolio & Projects</h2>
+        <p>Explore our diverse range of completed projects and research work</p>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+        <button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="environmental">Environmental</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="data-analysis environmental">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
+            <div class="project-tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Environmental</span>
+            </div>
+            <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
+            <div class="project-links">
+              <a href="#"><i class="fas fa-external-link-alt"></i> View Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="data-analysis">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Time Series</span>
+            </div>
+            <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
+            <div class="project-links">
+              <a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="bioinformatics ml">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>AI-Driven Herbicide Design & Molecular Docking</h3>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Molecular Docking</span>
+              <span class="tag">AI</span>
+            </div>
+            <p>Innovative project designing AI-based herbicide molecules with enhanced binding and toxicity profiles using SwissDock, SwissADME, and Python analysis.</p>
+            <div class="project-links">
+              <a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ml environmental">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3>ML
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="expertise" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Core Expertise</h2>
+        <p>Our deep-seated proficiency across key technical domains</p>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-item fade-in-up" style="animation-delay: 0.1s;">
+          <h4>Biotechnology & Genomics</h4>
+          <p>Molecular Biology Techniques, DNA/RNA Sequencing Analysis, Microbiology.</p>
+          <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+        </div>
+        <div class="expertise-item fade-in-up" style="animation-delay: 0.2s;">
+          <h4>Data Science (Python/R)</h4>
+          <p>Statistical Modeling, Predictive Analytics, Data Munging, Pandas/NumPy.</p>
+          <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="expertise-item fade-in-up" style="animation-delay: 0.3s;">
+          <h4>Bioinformatics & Docking</h4>
+          <p>Virtual Screening, ADMET, QSAR, Protein-Ligand Interaction Analysis, BLAST.</p>
+          <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+        </div>
+        <div class="expertise-item fade-in-up" style="animation-delay: 0.4s;">
+          <h4>AI & Machine Learning</h4>
+          <p>Classification, Regression, Neural Networks, Model Optimization, Scikit-learn, TensorFlow.</p>
+          <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="expertise-item fade-in-up" style="animation-delay: 0.5s;">
+          <h4>Data Visualization (Power BI)</h4>
+          <p>Interactive Dashboard Creation, KPI Tracking, Data Storytelling, DAX functions.</p>
+          <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+        </div>
+        <div class="expertise-item fade-in-up" style="animation-delay: 0.6s;">
+          <h4>Scientific & Grant Writing</h4>
+          <p>Academic Thesis, Research Manuscript Development, Funding Proposal Structuring.</p>
+          <div class="skill-bar"><div class="skill-progress" style="width: 98%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Scroll to Top -->
-    <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Client Testimonials</h2>
+        <p>What our research partners and clients say about us</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial">
+          <p class="testimonial-text">"AxiomBio Nexus provided exceptional support for our drug discovery project. Their molecular docking analysis was fast, accurate, and led us to a highly promising lead compound."</p>
+          <p class="testimonial-author">- Dr. Anjali Rao, Head of R&D</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"The Power BI dashboard developed for our environmental data was exactly what we needed. It made complex water quality metrics instantly understandable. Highly recommend!"</p>
+          <p class="testimonial-author">- Mr. Vijay Kumar, Environmental Consultant</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Mobile Menu
-        document.getElementById('menuToggle').addEventListener('click', () => {
-            document.getElementById('mainNav').classList.toggle('active');
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch with AxiomBio Nexus</h2>
+        <p>Start transforming your research today. Send us a message or find our contact details below.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p>We are ready to discuss your next big project.</p>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email:</strong><br>
+              consulting@axiombionexus.com
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <strong>Phone:</strong><br>
+              +91-9876543210 (India)
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Location:</strong><br>
+              Virtual Office, Chennai, India
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Interested Service</label>
+              <select id="service" name="service" required>
+                <option value="">-- Select a Service --</option>
+                <option value="Research Writing">Research Writing</option>
+                <option value="Data Analysis">Data Analysis & ML</option>
+                <option value="Bioinformatics">Bioinformatics</option>
+                <option value="Consultation">Project Consultation</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AxiomBio Nexus</h3>
+          <p>Expert consulting at the nexus of Biotechnology and Data Science.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Data Analysis</a></li>
+            <li><a href="#">Bioinformatics</a></li>
+            <li><a href="#">AI/ML Solutions</a></li>
+            <li><a href="#">Research Writing</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 AxiomBio Nexus. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Toggle Menu
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      const navLinks = mainNav.querySelectorAll('a');
+
+      menuToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        menuToggle.querySelector('i').classList.toggle('fa-bars');
+        menuToggle.querySelector('i').classList.toggle('fa-times');
+      });
+
+      // Close menu when a link is clicked (for mobile)
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (mainNav.classList.contains('active')) {
+            mainNav.classList.remove('active');
+            menuToggle.querySelector('i').classList.add('fa-bars');
+            menuToggle.querySelector('i').classList.remove('fa-times');
+          }
         });
+      });
 
-        // Project Filtering
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelector('.filter-btn.active').classList.remove('active');
-                btn.classList.add('active');
-                const filter = btn.dataset.filter;
-                document.querySelectorAll('.project-card').forEach(card => {
-                    const cats = card.dataset.category.split(' ');
-                    card.style.display = (filter === 'all' || cats.includes(filter)) ? 'block' : 'none';
-                });
-            });
-        });
+      // Scroll to Top Button Logic
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
 
-        // Scroll to Top
-        const scrollBtn = document.getElementById('scrollTop');
-        window.addEventListener('scroll', () => {
-            scrollBtn.classList.toggle('show', window.scrollY > 300);
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollTopBtn.classList.add('show');
+        } else {
+          scrollTopBtn.classList.remove('show');
+        }
+      };
+
+      scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
         });
-        scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    </script>
+      });
+
+      // Project Filtering Logic
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add active class to clicked button
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category');
+
+            if (filterValue === 'all' || categories.includes(filterValue)) {
+              card.style.display = 'block';
+              card.classList.add('fade-in-up'); // Re-apply animation
+            } else {
+              card.style.display = 'none';
+              card.classList.remove('fade-in-up');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
