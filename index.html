@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxiomBio Nexus - AIML, Bioinformatics & Biotechnology Consulting</title>
-  <meta name="description" content="AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, Bio-IT, BioPharmaceutics and Biotechnology to accelerate research and development in life sciences, IT, Pharma and environmental sectors.">
+  <title>AxiomBio Nexus - AI & Biotechnology Consulting</title>
+  <meta name="description" content="AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, and Biotechnology to accelerate research and development in life sciences and environmental sectors.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -354,29 +354,15 @@
       box-shadow: var(--shadow-lg);
     }
 
-    /* IMPORTANT: Styling for the Project Image/Video Placeholder */
+    /* Project Media Style (Kept as a simple background block) */
     .project-media {
-        width: 100%;
-        height: 200px; /* Adjust height as needed */
-        object-fit: cover;
-        background: var(--bg-alt); /* Light background when no image */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--text-light);
-        font-weight: 600;
-        font-size: 0.9rem;
-        text-align: center;
-        border-bottom: 1px solid #eee;
+      width: 100%;
+      height: 200px; /* Adjust height as needed */
+      object-fit: cover;
+      /* Use a color gradient for visual appeal when no image is present */
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
     }
     
-    /* You can override this with a background image in the HTML/inline style */
-    .project-media img, .project-media video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
 
     .project-content {
       padding: 1.5rem;
@@ -711,7 +697,7 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Transform Your Research with Expert Consultation</h1>
-      <p class="hero-subtitle">AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, and Biotechnology to accelerate research and development in life sciences and environmental sectorsAI/ML, Bioinformatics, Bio-IT, BioPharmaceutics and Biotechnology to accelerate research and development in life sciences, IT, Pharma and environmental sectors.</p>
+      <p class="hero-subtitle">AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, and Biotechnology to accelerate research and development in life sciences and environmental sectors.</p>
       <div class="cta-buttons">
         <a href="#services" class="btn btn-primary">
           <i class="fas fa-hand-sparkles"></i> Explore Services
@@ -934,7 +920,9 @@
         <button class="filter-btn" data-filter="hardware">Hardware/IoT</button>
       </div>
 
-     
+      <div class="projects-grid">
+        <div class="project-card" data-category="data-analysis environmental">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
             <div class="project-tags">
@@ -949,7 +937,8 @@
           </div>
         </div>
 
-        
+        <div class="project-card" data-category="data-analysis">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
             <div class="project-tags">
@@ -963,7 +952,8 @@
           </div>
         </div>
 
-
+        <div class="project-card" data-category="bioinformatics ml">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>AI-Driven Herbicide Design & Molecular Docking</h3>
             <div class="project-tags">
@@ -978,7 +968,8 @@
           </div>
         </div>
         
-
+        <div class="project-card" data-category="data-analysis biotechnology">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>Organic Aquaculture Feed & Production Optimization</h3>
             <div class="project-tags">
@@ -993,7 +984,8 @@
           </div>
         </div>
 
-
+        <div class="project-card" data-category="hardware environmental">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>Solar-Powered Fertilizer Spraying Device</h3>
             <div class="project-tags">
@@ -1008,7 +1000,8 @@
           </div>
         </div>
 
-
+        <div class="project-card" data-category="ml">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>SmartDeskAI-wallpaper-Scheduler</h3>
             <div class="project-tags">
@@ -1023,7 +1016,8 @@
           </div>
         </div>
 
-
+        <div class="project-card" data-category="ml">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>NoteGen</h3>
             <div class="project-tags">
@@ -1038,7 +1032,8 @@
           </div>
         </div>
 
-
+        <div class="project-card" data-category="ml environmental data-analysis">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>ML-Model For Water Quality Prediction</h3>
             <div class="project-tags">
@@ -1053,7 +1048,8 @@
           </div>
         </div>
         
-
+        <div class="project-card" data-category="ml environmental">
+          <div class="project-media"></div>
           <div class="project-content">
             <h3>ML for Bio-remediation Efficacy</h3>
             <div class="project-tags">
