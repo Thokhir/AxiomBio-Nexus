@@ -225,7 +225,7 @@
       margin: 0 auto;
     }
     
-    /* NEW MISSION STYLE */
+    /* MISSION STYLE */
     .mission-section {
         background: var(--primary);
         color: white;
@@ -354,7 +354,7 @@
       box-shadow: var(--shadow-lg);
     }
 
-    /* UPDATED: Project Media Style to display text content inside the colored block */
+    /* Project Media Style to display text content inside the colored block */
     .project-media {
       width: 100%;
       height: 200px;
@@ -386,20 +386,15 @@
       color: white; /* White tag text */
       border: none;
     }
-    /* END UPDATED CSS */
+    /* END Project Media CSS */
     
 
     .project-content {
       padding: 1.5rem;
     }
 
-    .project-content h3 { /* Ensure the title is removed from here if content is moved */
-        display: none;
-    }
-
-    .project-content .project-tags { /* Ensure tags are removed from here if content is moved */
-        display: none;
-    }
+    .project-content h3 { display: none; }
+    .project-content .project-tags { display: none; }
 
     .project-tags {
       display: flex;
@@ -952,75 +947,8 @@
         <button class="filter-btn" data-filter="environmental">Environmental</button>
         <button class="filter-btn" data-filter="hardware">Hardware/IoT</button>
       </div>
-      
-        <div class="project-card" data-category="hardware environmental">
-          <div class="project-media">
-            <h3>Solar-Powered Fertilizer Spraying Device</h3>
-            <div class="project-tags">
-              <span class="tag">IoT</span>
-              <span class="tag">Hardware</span>
-              <span class="tag">Environmental</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>Design and prototyping of an automated, solar-powered device for optimized, precise fertilizer application, reducing waste and environmental impact.</p>
-            <div class="project-links">
-              <a href="https://github.com/YourRepo/SolarFertilizerDevice" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="project-card" data-category="ml">
-          <div class="project-media">
-            <h3>SmartDeskAI-wallpaper-Scheduler</h3>
-            <div class="project-tags">
-              <span class="tag">AI</span>
-              <span class="tag">Scheduler</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>An intelligent scheduling system using AI to manage and dynamically update desktop wallpapers based on time, context, or user preference patterns.</p>
-            <div class="project-links">
-              <a href="https://github.com/YourRepo/SmartDeskAI" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ml">
-          <div class="project-media">
-            <h3>NoteGen</h3>
-            <div class="project-tags">
-              <span class="tag">Natural Language Processing</span>
-              <span class="tag">AI</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>A smart application designed to generate concise, structured notes automatically from long-form text or transcripts using advanced NLP techniques.</p>
-            <div class="project-links">
-              <a href="https://github.com/YourRepo/NoteGen" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ml environmental data-analysis">
-          <div class="project-media">
-            <h3>ML-Model For Water Quality Prediction</h3>
-            <div class="project-tags">
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Environmental</span>
-              <span class="tag">Predictive Modeling</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>Developed a robust machine learning model (e.g., Random Forest or XGBoost) to predict future water quality indices based on historical sensor data and environmental factors.</p>
-            <div class="project-links">
-              <a href="https://github.com/YourRepo/ML-WaterQuality" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="projects-grid">
+      <div class="projects-grid">
         <div class="project-card" data-category="data-analysis environmental">
           <div class="project-media">
             <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
@@ -1033,7 +961,9 @@
           <div class="project-content">
             <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
             <div class="project-links">
-              <a href="Herbicide part2.png"><i class="fas fa-external-link-alt"></i> View Demo</a>
+              <a href="https://raw.githubusercontent.com/YourUsername/YourRepoName/main/assets/water-dashboard.png" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i> View Image Demo
+              </a>
             </div>
           </div>
         </div>
@@ -1049,7 +979,9 @@
           <div class="project-content">
             <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
             <div class="project-links">
-              <a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+              <a href="https://youtu.be/YourPowerBIDemoVideoID" target="_blank" class="project-link">
+                <i class="fab fa-youtube"></i> Watch Video Demo
+              </a>
             </div>
           </div>
         </div>
@@ -1066,7 +998,7 @@
           <div class="project-content">
             <p>Innovative project designing AI-based herbicide molecules with enhanced binding and toxicity profiles using SwissDock, SwissADME, and Python analysis.</p>
             <div class="project-links">
-              <a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
@@ -1083,11 +1015,78 @@
           <div class="project-content">
             <p>Consultancy project focused on optimizing the nutrient composition of organic feed and predicting production yield using statistical modeling and data analysis.</p>
             <div class="project-links">
-              <a href="https://github.com/YourRepo/OrganicAquaculture" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/YourRepo/OrganicAquaculture" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
 
+        <div class="project-card" data-category="hardware environmental">
+          <div class="project-media">
+            <h3>Solar-Powered Fertilizer Spraying Device</h3>
+            <div class="project-tags">
+              <span class="tag">IoT</span>
+              <span class="tag">Hardware</span>
+              <span class="tag">Environmental</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>Design and prototyping of an automated, solar-powered device for optimized, precise fertilizer application, reducing waste and environmental impact.</p>
+            <div class="project-links">
+              <a href="https://github.com/YourRepo/SolarFertilizerDevice" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ml">
+          <div class="project-media">
+            <h3>SmartDeskAI-wallpaper-Scheduler</h3>
+            <div class="project-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Scheduler</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>An intelligent scheduling system using AI to manage and dynamically update desktop wallpapers based on time, context, or user preference patterns.</p>
+            <div class="project-links">
+              <a href="https://github.com/YourRepo/SmartDeskAI" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ml">
+          <div class="project-media">
+            <h3>NoteGen</h3>
+            <div class="project-tags">
+              <span class="tag">Natural Language Processing</span>
+              <span class="tag">AI</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>A smart application designed to generate concise, structured notes automatically from long-form text or transcripts using advanced NLP techniques.</p>
+            <div class="project-links">
+              <a href="https://github.com/YourRepo/NoteGen" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ml environmental data-analysis">
+          <div class="project-media">
+            <h3>ML-Model For Water Quality Prediction</h3>
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Environmental</span>
+              <span class="tag">Predictive Modeling</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>Developed a robust machine learning model (e.g., Random Forest or XGBoost) to predict future water quality indices based on historical sensor data and environmental factors.</p>
+            <div class="project-links">
+              <a href="https://github.com/YourRepo/ML-WaterQuality" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
         
         <div class="project-card" data-category="ml environmental">
           <div class="project-media">
@@ -1100,7 +1099,7 @@
           <div class="project-content">
             <p>Development of predictive models to forecast the efficacy and optimal conditions for microbial bio-remediation of pollutants in contaminated sites.</p>
             <div class="project-links">
-              <a href="https://github.com/Thokhir/ML-Bioremediation" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Thokhir/ML-Bioremediation" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
