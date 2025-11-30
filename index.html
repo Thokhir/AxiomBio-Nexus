@@ -54,10 +54,27 @@
     }
 
     /* 1. LOGO/NAME CHANGE */
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--primary);
+    /* Update this section in your <style> block */
+
+  .logo {
+    /* Increased font size for prominence */
+    font-size: 1.85rem; 
+    font-weight: 800; 
+    color: var(--text); /* Use the standard text color */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* Increased spacing */
+  }
+
+/* ADD THIS NEW CLASS */
+.logo-icon {
+  font-size: 2.5rem; /* Larger size for the icon */
+  /* Gradient text color effect */
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block; /* Ensures gradient renders correctly */
+}
     }
 
     nav {
