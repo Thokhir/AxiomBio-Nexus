@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AxiomBio Nexus - Biotechnology & Data Science Consulting</title>
-    <meta name="description" content="AxiomBio Nexus: Expert biotechnology, bioinformatics, and data analytics consulting. Specializing in AI/ML, research writing, and project innovation.">
+    <title>Dr. Thokhir Basha Shaik - Biotechnology & Data Science Consultant</title>
+    <meta name="description" content="Professional biotechnology, bioinformatics, and data analytics consulting services. Expert in research writing, project development, and AI/ML applications.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -49,24 +49,18 @@
         .stats-bar { background: var(--primary-dark); color: white; padding: 2rem 0; }
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
         .stat-item h3 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
-        .stat-item p { opacity: 0.9; }
 
         /* Sections */
         section { padding: 5rem 0; }
         .section-alt { background: var(--bg-alt); }
         .section-header { text-align: center; margin-bottom: 3rem; }
         .section-header h2 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 1rem; color: var(--primary); }
-        .section-header p { font-size: 1.125rem; color: var(--text-light); max-width: 700px; margin: 0 auto; }
 
         /* Services Grid */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .service-card { background: var(--card); padding: 2rem; border-radius: 16px; box-shadow: var(--shadow); transition: all 0.3s; border-top: 4px solid var(--primary); }
         .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
         .service-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; color: white; margin-bottom: 1.5rem; }
-        .service-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--text); }
-        .service-card ul { list-style: none; margin: 1rem 0; }
-        .service-card li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; }
-        .service-card li::before { content: "✓"; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
         .price-tag { display: inline-block; background: linear-gradient(135deg, var(--accent), #ef4444); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; margin-top: 1rem; }
 
         /* Projects */
@@ -76,46 +70,9 @@
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
         .project-card { background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); transition: all 0.3s; }
         .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
-        .project-image { width: 100%; height: 200px; object-fit: cover; background: linear-gradient(135deg, var(--primary), var(--secondary)); } /* CUSTOMIZE: Replace with <img src="assets/your-project-image.jpg" alt="Project"> or <video src="assets/powerbi-dashboard.mp4" autoplay loop muted></video> inside .project-image div */
-        .project-content { padding: 1.5rem; }
+        .project-image { width: 100%; height: 200px; background: linear-gradient(135deg, var(--primary), var(--secondary)); }
         .project-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
         .tag { background: var(--bg-alt); color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.875rem; font-weight: 500; }
-        .project-links { display: flex; gap: 1rem; margin-top: 1rem; }
-        .project-link { color: var(--primary); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 0.25rem; }
-
-        /* Expertise (Placeholder - Add if needed) */
-        .expertise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        .expertise-item { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: var(--shadow); }
-        .expertise-item h4 { color: var(--primary); margin-bottom: 0.75rem; font-size: 1.125rem; }
-        .skill-bar { background: var(--bg-alt); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 0.5rem; }
-        .skill-progress { height: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); border-radius: 4px; transition: width 1s ease; }
-
-        /* Contact - Get in Touch with AxiomBio Nexus (Adapted from BioAxiom-Analytics site) */
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-        .contact-info { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 2.5rem; border-radius: 16px; }
-        .contact-item { display: flex; align-items: center; gap: 1rem; margin: 1.5rem 0; }
-        .contact-item i { font-size: 1.5rem; width: 40px; }
-        .contact-form { background: white; padding: 2rem; border-radius: 16px; box-shadow: var(--shadow); }
-        .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text); }
-        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.875rem; border: 2px solid var(--bg-alt); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s; }
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--primary); }
-        .form-group textarea { resize: vertical; min-height: 120px; }
-        .btn-submit { background: var(--primary); color: white; padding: 1rem 2rem; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s; }
-        .btn-submit:hover { background: var(--primary-dark); transform: translateY(-2px); }
-
-        /* Footer */
-        footer { background: var(--text); color: white; padding: 3rem 0 1rem; }
-        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
-        .footer-section h3 { margin-bottom: 1rem; }
-        .footer-section ul { list-style: none; }
-        .footer-section li { margin: 0.5rem 0; }
-        .footer-section a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s; }
-        .footer-section a:hover { color: white; }
-        .social-links { display: flex; gap: 1rem; margin-top: 1rem; }
-        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
-        .social-links a:hover { background: var(--primary); transform: translateY(-3px); }
-        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.7; }
 
         /* Scroll to Top */
         .scroll-top { position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; background: var(--primary); color: white; border: none; border-radius: 50%; cursor: pointer; display: none; align-items: center; justify-content: center; box-shadow: var(--shadow-lg); transition: all 0.3s; z-index: 50; }
@@ -127,13 +84,8 @@
             nav { position: fixed; top: 70px; left: 0; right: 0; background: white; flex-direction: column; padding: 2rem; box-shadow: var(--shadow-lg); transform: translateX(-100%); transition: transform 0.3s; }
             nav.active { transform: translateX(0); }
             .menu-toggle { display: block; }
-            .contact-grid { grid-template-columns: 1fr; }
             .hero { background-attachment: scroll; }
         }
-
-        /* Animations */
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        .fade-in-up { animation: fadeInUp 0.6s ease forwards; }
     </style>
 </head>
 <body>
@@ -142,7 +94,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">AxiomBio Nexus</div> <!-- CUSTOMIZE: Add logo image here, e.g., <img src="assets/logo.png" alt="AxiomBio Nexus" style="height: 40px;"> -->
+                <div class="logo">Dr. Thokhir Basha Shaik</div>
                 <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
                 <nav id="mainNav">
                     <a href="#home">Home</a>
@@ -158,7 +110,7 @@
     <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Transform Your Research at the Nexus of Biotech & Analytics</h1> <!-- CUSTOMIZE: Replace hero background with your image/video, e.g., change url() to 'assets/your-hero.jpg' -->
+            <h1>Transform Your Research with Expert Consultation</h1>
             <p class="hero-subtitle">11+ years of experience in Biotechnology, Bioinformatics & Data Analytics | PhD in Biotechnology | 34 Publications | 1 Patent</p>
             <div class="cta-buttons">
                 <a href="#services" class="btn btn-primary"><i class="fas fa-hand-sparkles"></i> Explore Services</a>
@@ -187,19 +139,75 @@
                 <p>Comprehensive solutions for academic, research, and industrial needs</p>
             </div>
             <div class="services-grid">
+                <!-- All 9 service cards exactly as in your original -->
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div> <!-- CUSTOMIZE: Replace icon with <img src="assets/service1-icon.png"> -->
+                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
                     <h3>Research & Academic Writing</h3>
                     <p>High-quality scientific writing services for publications and academic purposes</p>
                     <ul><li>Thesis Writing (MS & PhD)</li><li>Research Paper Writing</li><li>Literature Review</li><li>Grant Proposal Writing</li><li>Scientific Reports</li><li>Manuscript Editing & Proofreading</li></ul>
                     <div class="price-tag">Contact for Pricing</div>
                 </div>
-                <!-- Repeat for other 8 services exactly as original - omitted for brevity; copy from previous code -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analysis & Visualization</h3>
+                    <p>Transform your data into actionable insights with advanced analytics</p>
+                    <ul><li>Statistical Analysis (ANOVA, PCA, Regression)</li><li>Power BI Dashboard Development</li><li>Python & R Data Analysis</li><li>Machine Learning Models</li><li>Data Cleaning & Preprocessing</li><li>Custom Report Generation</li></ul>
+                    <div class="price-tag">From ₹5,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-dna"></i></div>
+                    <h3>Bioinformatics & Computational Biology</h3>
+                    <p>Advanced computational solutions for biological research</p>
+                    <ul><li>Molecular Docking Studies</li><li>ADMET Analysis</li><li>QSAR Modeling</li><li>Sequence Analysis (BLAST, FASTA)</li><li>Protein Structure Analysis</li><li>Multi-omics Data Analysis</li></ul>
+                    <div class="price-tag">From ₹8,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Research Project Consultation</h3>
+                    <p>End-to-end support for research projects</p>
+                    <ul><li>Project Design & Planning</li><li>Methodology Development</li><li>Experimental Design</li><li>Result Interpretation</li><li>Technical Guidance</li><li>Literature Survey</li></ul>
+                    <div class="price-tag">From ₹10,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Training & Workshops</h3>
+                    <p>Skill development programs for students and professionals</p>
+                    <ul><li>Bioinformatics Training</li><li>Data Science for Biologists</li><li>Python/R Programming</li><li>Statistical Analysis</li><li>Power BI for Research</li><li>Custom Workshop Design</li></ul>
+                    <div class="price-tag">Group Rates Available</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Laboratory Setup & SOP Development</h3>
+                    <p>Establish research facilities with proper protocols</p>
+                    <ul><li>Lab Equipment Procurement</li><li>SOP Development</li><li>Quality Control Protocols</li><li>Staff Training</li><li>Compliance Consulting</li><li>Method Validation</li></ul>
+                    <div class="price-tag">Custom Quotes</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-pills"></i></div>
+                    <h3>Drug Discovery Support</h3>
+                    <p>Computational and analytical support for drug development</p>
+                    <ul><li>Target Identification</li><li>Virtual Screening</li><li>Lead Optimization</li><li>ADMET Prediction</li><li>Toxicity Assessment</li><li>Structure-Activity Analysis</li></ul>
+                    <div class="price-tag">From ₹15,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Environmental Analysis</h3>
+                    <p>Water quality and environmental health assessment</p>
+                    <ul><li>Water Quality Assessment</li><li>Environmental Risk Modeling</li><li>Pollution Monitoring</li><li>Sustainability Analysis</li><li>Regulatory Compliance</li><li>Impact Assessment Reports</li></ul>
+                    <div class="price-tag">From ₹7,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI/ML for Life Sciences</h3>
+                    <p>Artificial intelligence solutions for biological problems</p>
+                    <ul><li>Predictive Model Development</li><li>Classification & Regression</li><li>Neural Network Applications</li><li>Feature Engineering</li><li>Model Optimization</li><li>AI-Driven Design (Molecules/Proteins)</li></ul>
+                    <div class="price-tag">From ₹12,000</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects (with working filter) -->
     <section id="projects" class="section section-alt">
         <div class="container">
             <div class="section-header">
@@ -215,138 +223,43 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card" data-category="data-analysis environmental">
-                    <div class="project-image"><!-- CUSTOMIZE: Add <img src="assets/water-quality.jpg" alt="Water Quality Dashboard"> or <video src="assets/powerbi-video.mp4" controls></video> here --></div>
+                    <div class="project-image"></div>
                     <div class="project-content">
                         <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
                         <div class="project-tags"><span class="tag">Excel</span><span class="tag">Data Visualization</span><span class="tag">Environmental</span></div>
                         <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
-                        <div class="project-links"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Demo</a></div>
+                        <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> View Demo</a></div>
                     </div>
                 </div>
-                <!-- Add other project cards as in original -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
+                        <div class="project-tags"><span class="tag">Power BI</span><span class="tag">Time Series</span></div>
+                        <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
+                        <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a></div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="bioinformatics ml">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>AI-Driven Herbicide Design & Molecular Docking</h3>
+                        <div class="project-tags"><span class="tag">Python</span><span class="tag">Molecular Docking</span><span class="tag">AI</span></div>
+                        <p>Innovative project designing AI-based herbicide molecules with enhanced binding and toxicity profiles using SwissDock, SwissADME, and Python analysis.</p>
+                        <div class="project-links"><a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Expertise (Optional - Add your skills here) -->
-    <section id="expertise" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Expertise</h2>
-                <p>Core competencies driving innovation at AxiomBio Nexus</p>
-            </div>
-            <div class="expertise-grid">
-                <!-- CUSTOMIZE: Add skill bars, e.g., <div class="expertise-item"><h4>Python</h4><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact - Get in Touch with AxiomBio Nexus -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch with AxiomBio Nexus</h2>
-                <p>Ready to collaborate? Let's connect and elevate your research.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Connect With Us</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@axiombionexus.com</p> <!-- CUSTOMIZE: Update your email -->
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91-XXXX-XXXXXX</p> <!-- CUSTOMIZE: Add your phone -->
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Bhimavaram, Andhra Pradesh, India</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a topic</option>
-                            <option value="consulting">Consulting Inquiry</option>
-                            <option value="project">Project Collaboration</option>
-                            <option value="training">Training Request</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AxiomBio Nexus</h3>
-                    <p>Connecting biotechnology and data science for groundbreaking solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a> <!-- CUSTOMIZE: Add real links, e.g., href="https://linkedin.com/in/yourprofile" -->
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AxiomBio Nexus. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
     <!-- Scroll to Top -->
     <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
 
     <script>
-        // Mobile Menu Toggle
+        // Mobile Menu
         document.getElementById('menuToggle').addEventListener('click', () => {
             document.getElementById('mainNav').classList.toggle('active');
-        });
-
-        // Smooth Scrolling for Nav Links
-        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
         });
 
         // Project Filtering
@@ -354,30 +267,20 @@
             btn.addEventListener('click', () => {
                 document.querySelector('.filter-btn.active').classList.remove('active');
                 btn.classList.add('active');
-                const filter = btn.getAttribute('data-filter');
+                const filter = btn.dataset.filter;
                 document.querySelectorAll('.project-card').forEach(card => {
-                    const categories = card.getAttribute('data-category').split(' ');
-                    card.style.display = (filter === 'all' || categories.includes(filter)) ? 'block' : 'none';
+                    const cats = card.dataset.category.split(' ');
+                    card.style.display = (filter === 'all' || cats.includes(filter)) ? 'block' : 'none';
                 });
             });
         });
 
-        // Contact Form Handler (Logs submission; integrate with Formspree for emails)
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            // CUSTOMIZE: Add your form submission logic here, e.g., fetch to Formspree endpoint
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            e.target.reset();
-        });
-
         // Scroll to Top
-        const scrollTopBtn = document.getElementById('scrollTop');
+        const scrollBtn = document.getElementById('scrollTop');
         window.addEventListener('scroll', () => {
-            scrollTopBtn.classList.toggle('show', window.scrollY > 300);
+            scrollBtn.classList.toggle('show', window.scrollY > 300);
         });
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     </script>
 </body>
 </html>
