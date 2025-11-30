@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Thokhir Basha Shaik - Biotechnology & Data Science Consultant</title>
-  <meta name="description" content="Professional biotechnology, bioinformatics, and data analytics consulting services. Expert in research writing, project development, and AI/ML applications.">
+  <title>AxiomBio Nexus - AI & Biotechnology Consulting</title>
+  <meta name="description" content="AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, and Biotechnology to accelerate research and development in life sciences and environmental sectors.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,11 +53,11 @@
       padding: 1rem 0;
     }
 
-    /* UPDATED LOGO STYLE (Simple text from user's uploaded file) */
+    /* UPDATED CSS FOR LOGO (AxiomBio Nexus) */
     .logo {
       font-size: 1.85rem; 
       font-weight: 800; 
-      color: var(--primary); /* Keep blue primary color */
+      color: var(--text);
       display: flex;
       align-items: center;
       gap: 0.75rem; 
@@ -65,13 +65,12 @@
 
     .logo-icon {
       font-size: 2.5rem; 
+      /* Creates a gradient effect on the icon */
       background: linear-gradient(90deg, var(--primary), var(--secondary));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      display: none; /* Hide icon for simple text logo */
+      display: block; 
     }
-    /* END LOGO STYLE */
-
 
     nav {
       display: flex;
@@ -226,7 +225,7 @@
       margin: 0 auto;
     }
     
-    /* MISSION STYLE (Re-added from last comprehensive update) */
+    /* MISSION STYLE */
     .mission-section {
         background: var(--primary);
         color: white;
@@ -355,50 +354,36 @@
       box-shadow: var(--shadow-lg);
     }
 
-    /* Project Media Style for text in colored block */
+    /* Project Media Style to display text content inside the colored block */
     .project-media {
       width: 100%;
       height: 200px;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
+      
+      /* New styles for containing text */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 1.5rem 1rem; 
+      padding: 1.5rem 1rem; /* Increased padding */
       color: white; 
     }
 
-    /* Project Media Style for videos (ensures video fits nicely) */
-    .project-video-container {
-        width: 100%;
-        height: 200px;
-        background: var(--text); /* Dark background for video container */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-    .project-video-container video {
-        max-height: 200px;
-        object-fit: contain;
-    }
-
-
     .project-media h3 {
-        color: white; 
+        color: white; /* Ensure title is white */
         margin-bottom: 0.75rem;
         font-size: 1.5rem;
     }
 
     .project-media .project-tags {
-        justify-content: center; 
-        margin-bottom: 0; 
+        justify-content: center; /* Center the tags list */
+        margin-bottom: 0; /* Remove bottom margin here */
     }
     
     .project-media .tag {
-      background: rgba(255, 255, 255, 0.25); 
-      color: white; 
+      background: rgba(255, 255, 255, 0.25); /* Semi-transparent white tag background */
+      color: white; /* White tag text */
       border: none;
     }
     /* END Project Media CSS */
@@ -410,7 +395,6 @@
 
     .project-content h3 { display: none; }
     .project-content .project-tags { display: none; }
-
 
     .project-tags {
       display: flex;
@@ -719,7 +703,10 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <div class="logo">Dr. Thokhir Basha Shaik</div>
+        <div class="logo">
+          <i class="fas fa-microchip logo-icon"></i> 
+          AxiomBio Nexus
+        </div>
         <button class="menu-toggle" id="menuToggle">
           <i class="fas fa-bars"></i>
         </button>
@@ -738,7 +725,7 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Transform Your Research with Expert Consultation</h1>
-      <p class="hero-subtitle">Dr. Thokhir Basha Shaik: 11+ years of experience in Biotechnology, Bioinformatics & Data Analytics | PhD in Biotechnology | 34 Publications | 1 Patent</p>
+      <p class="hero-subtitle">AxiomBio Nexus provides expert consulting in AI/ML, Bioinformatics, and Biotechnology to accelerate research and development in life sciences and environmental sectors.</p>
       <div class="cta-buttons">
         <a href="#services" class="btn btn-primary">
           <i class="fas fa-hand-sparkles"></i> Explore Services
@@ -803,7 +790,7 @@
             <li>Scientific Reports</li>
             <li>Manuscript Editing & Proofreading</li>
           </ul>
-          <div class="price-tag">Contact for Pricing</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -820,7 +807,7 @@
             <li>Data Cleaning & Preprocessing</li>
             <li>Custom Report Generation</li>
           </ul>
-          <div class="price-tag">From ₹5,000</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -837,7 +824,7 @@
             <li>Protein Structure Analysis</li>
             <li>Multi-omics Data Analysis</li>
           </ul>
-          <div class="price-tag">From ₹8,000</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -854,7 +841,7 @@
             <li>Technical Guidance</li>
             <li>Literature Survey</li>
           </ul>
-          <div class="price-tag">From ₹10,000</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -871,7 +858,7 @@
             <li>Power BI for Research</li>
             <li>Custom Workshop Design</li>
           </ul>
-          <div class="price-tag">Group Rates Available</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -888,7 +875,7 @@
             <li>Compliance Consulting</li>
             <li>Method Validation</li>
           </ul>
-          <div class="price-tag">Custom Quotes</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -905,7 +892,7 @@
             <li>Toxicity Assessment</li>
             <li>Structure-Activity Analysis</li>
           </ul>
-          <div class="price-tag">From ₹15,000</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
 
         <div class="service-card">
@@ -922,7 +909,7 @@
             <li>Regulatory Compliance</li>
             <li>Impact Assessment Reports</li>
           </ul>
-          <div class="price-tag">From ₹7,000</div>
+          <a href="#contact" class="price-tag">Contact for Pricing</a>
         </div>
 
         <div class="service-card">
@@ -939,7 +926,7 @@
             <li>Model Optimization</li>
             <li>AI-Driven Design (Molecules/Proteins)</li>
           </ul>
-          <div class="price-tag">From ₹12,000</div>
+          <a href="#contact" class="price-tag">Get Quote</a>
         </div>
       </div>
     </div>
@@ -974,10 +961,45 @@
           <div class="project-content">
             <p>Developed a robust machine learning model (e.g., Random Forest or XGBoost) to predict future water quality indices based on historical sensor data and environmental factors.</p>
             <div class="project-links">
-              <a href="assets/ML model for water quality.png" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="ML model for water quality.png" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
         </div>
+        
+        <div class="project-card" data-category="ml">
+          <div class="project-media">
+            <h3>SmartDeskAI-wallpaper-Scheduler</h3>
+            <div class="project-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Scheduler</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>An intelligent scheduling system using AI to manage and dynamically update desktop wallpapers based on time, context, or user preference patterns.</p>
+            <div class="project-links">
+              <a href="https://github.com/Thokhir/SmartDeskAI-wallpaper-Scheduler.git" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ml">
+          <div class="project-media">
+            <h3>NoteGen</h3>
+            <div class="project-tags">
+              <span class="tag">Natural Language Processing</span>
+              <span class="tag">AI</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>A smart application designed to generate concise, structured notes automatically from long-form text or transcripts using advanced NLP techniques.</p>
+            <div class="project-links">
+              <a href="https://github.com/Thokhir/NoteGen.git" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        
         <div class="project-card" data-category="hardware environmental">
           <div class="project-media">
             <h3>Solar-Powered Fertilizer Spraying Device</h3>
@@ -995,81 +1017,6 @@
           </div>
         </div>
 
-        <div class="project-card" data-category="ml">
-          <div class="project-media">
-            <h3>SmartDeskAI-wallpaper-Scheduler</h3>
-            <div class="project-tags">
-              <span class="tag">AI</span>
-              <span class="tag">Scheduler</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>An intelligent scheduling system using AI to manage and dynamically update desktop wallpapers based on time, context, or user preference patterns.</p>
-            <div class="project-links">
-              <a href="https://github.com/YourRepo/SmartDeskAI" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="ml">
-          <div class="project-media">
-            <h3>NoteGen</h3>
-            <div class="project-tags">
-              <span class="tag">Natural Language Processing</span>
-              <span class="tag">AI</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>A smart application designed to generate concise, structured notes automatically from long-form text or transcripts using advanced NLP techniques.</p>
-            <div class="project-links">
-              <a href="https://github.com/YourRepo/NoteGen" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-     
-        <div class="project-card" data-category="data-analysis environmental">
-          <div class="project-media">
-            <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
-            <div class="project-tags">
-              <span class="tag">Excel</span>
-              <span class="tag">Data Visualization</span>
-              <span class="tag">Environmental</span>
-            </div>
-          </div>
-          <div class="project-content">
-            <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
-            <div class="project-links">
-              <a href="https://raw.githubusercontent.com/YourUsername/YourRepoName/main/assets/water-dashboard.png" target="_blank" class="project-link">
-                <i class="fas fa-external-link-alt"></i> View Image Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="data-analysis">
-          <div class="project-video-container">
-            <video controls style="width: 100%; height: auto; max-height: 200px; display: block;">
-              <source src="YOUR-GITHUB-RAW-LINK-TO-VIDEO.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="project-content">
-            <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
-            <div class="project-tags">
-              <span class="tag">Power BI</span>
-              <span class="tag">Time Series</span>
-            </div>
-            <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
-            <div class="project-links">
-              <a href="YOUR-GITHUB-RAW-LINK-TO-VIDEO.mp4" target="_blank" class="project-link">
-                <i class="fas fa-download"></i> Download Video
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div class="project-card" data-category="bioinformatics ml">
           <div class="project-media">
             <h3>AI-Driven Herbicide Design & Molecular Docking</h3>
@@ -1082,11 +1029,51 @@
           <div class="project-content">
             <p>Innovative project designing AI-based herbicide molecules with enhanced binding and toxicity profiles using SwissDock, SwissADME, and Python analysis.</p>
             <div class="project-links">
-              <a href="assets/Herbicide part2.png" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://github.com/Thokhir/Docking_Herbicides" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              <a href="Herbicide part2.png" target="_blank" class="project-link"><i class="fab fa-github"></i> View Image Demo</a>
             </div>
           </div>
         </div>
         
+        <div class="project-card" data-category="data-analysis environmental">
+          <div class="project-media">
+            <h3>Water Quality Dashboard (Pre vs Post-Monsoon)</h3>
+            <div class="project-tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Environmental</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>Comprehensive Excel dashboard analyzing water quality across 8 stations with DWQI, IWQI, AWQI, LWQI metrics. Identified seasonal variations and water quality deterioration patterns.</p>
+            <div class="project-links">
+              <a href="Water quality dashboard.mp4" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Watch Video Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="data-analysis">
+          <div class="project-media">
+            <h3>Chennai Reservoir Water Levels Analysis (2005-2019)</h3>
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Time Series</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <p>Interactive Power BI dashboard tracking water levels across four reservoirs, revealing peak in 2011 and concerning decline by 2019.</p>
+            <div class="project-links">
+              <a href="https://github.com/Thokhir/Reservoir_levels_Chennai.git" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              <a href="Chennai reservoir.mp4" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Watch Video Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      
         <div class="project-card" data-category="data-analysis biotechnology">
           <div class="project-media">
             <h3>Organic Aquaculture Feed & Production Optimization</h3>
@@ -1103,7 +1090,7 @@
             </div>
           </div>
         </div>
-
+  
         <div class="project-card" data-category="ml environmental">
           <div class="project-media">
             <h3>ML for Bio-remediation Efficacy</h3>
@@ -1172,7 +1159,7 @@
       </div>
       <div class="testimonials-slider">
         <div class="testimonial">
-          <p class="testimonial-text">"Dr. Shaik provided exceptional support for our drug discovery project. His molecular docking analysis was fast, accurate, and led us to a highly promising lead compound."</p>
+          <p class="testimonial-text">"AxiomBio Nexus provided exceptional support for our drug discovery project. Their molecular docking analysis was fast, accurate, and led us to a highly promising lead compound."</p>
           <p class="testimonial-author">- Dr. Anjali Rao, Head of R&D</p>
         </div>
         <div class="testimonial">
@@ -1186,7 +1173,7 @@
   <section id="contact" class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Get in Touch</h2>
+        <h2>Get in Touch with BioAxiom</h2>
         <p>Start transforming your research today. Send us a message or find our contact details below.</p>
       </div>
       <div class="contact-grid">
@@ -1198,7 +1185,7 @@
             <i class="fas fa-envelope"></i>
             <div>
               <strong>Email:</strong><br>
-              <a href="mailto:your.mail@example.com" style="color: white; text-decoration: underline;">your.mail@example.com</a> 
+              <a href="mailto:services.axiombionexus@gmail.com" style="color: white; text-decoration: underline;">your.mail@example.com</a> 
             </div>
           </div>
           
@@ -1206,20 +1193,20 @@
             <i class="fas fa-phone-alt"></i>
             <div>
               <strong>Phone:</strong><br>
-              <a href="tel:+919876543210" style="color: white; text-decoration: underline;">+91-9876543210</a> (India)
+              <a href="tel:+919550880249" style="color: white; text-decoration: underline;">+91-9876543210</a> (India)
             </div>
           </div>
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <strong>Location:</strong><br>
-              Virtual Office, Chennai, India
+              Virtual Office, Hyderabad, India
             </div>
           </div>
         </div>
         <div class="contact-form">
           <form 
-            action="mailto:your.mail@example.com" 
+            action="mailto:services.axiombionexus@gmail.com" 
             method="POST" 
             enctype="text/plain"
             ><div class="form-group">
@@ -1258,7 +1245,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Dr. Thokhir Basha Shaik</h3>
+          <h3>AxiomBio Nexus</h3>
           <p>Expert consulting at the nexus of Biotechnology and Data Science.</p>
           <div class="social-links">
             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -1295,7 +1282,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2024 Dr. Thokhir Basha Shaik. All Rights Reserved.
+        &copy; 2024 AxiomBio Nexus. All Rights Reserved.
       </div>
     </div>
   </footer>
