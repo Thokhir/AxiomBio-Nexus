@@ -1217,16 +1217,16 @@
         </div>
         <div class="contact-form">
           <form 
-            action="mailto:services.axiombionexus@gmail.com" 
+            action="https://formspree.io/f/mblaqope" 
             method="POST" 
-            enctype="text/plain"
-            ><div class="form-group">
+            >
+            <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="Name" required>
             </div>
             <div class="form-group">
               <label for="email">Your Email</label>
-              <input type="email" id="email" name="Email" required>
+              <input type="email" id="email" name="_replyto" required>
             </div>
             <div class="form-group">
               <label for="service">Interested Service</label>
@@ -1243,6 +1243,8 @@
               <label for="message">Your Message</label>
               <textarea id="message" name="Message" rows="5" required></textarea>
             </div>
+            <input type="hidden" name="_subject" value="New Inquiry from AxiomBio Nexus Website" />
+
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
